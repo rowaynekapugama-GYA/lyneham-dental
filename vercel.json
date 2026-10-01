@@ -1,0 +1,141 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/service/preventative-care",
+      "destination": "/services/preventative/check-up-and-clean/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/childrens-dentistry",
+      "destination": "/services/preventative/childrens-dentistry/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/cosmetic-enhancements",
+      "destination": "/services/cosmetic/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/tooth-reconstruction-cerec-one-visit-dentistry",
+      "destination": "/services/restorative/cerec-one-visit-crowns/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/root-canal-treatment",
+      "destination": "/services/restorative/root-canal-treatment/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/grinding-and-temporomandibular-joint-dysfunction",
+      "destination": "/services/general/grinding-clenching-tmj/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/extractions",
+      "destination": "/services/general/extractions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/service/emergency-dentist-our-canberra-patients",
+      "destination": "/services/general/dental-emergencies/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-team-dr-patrick-huang",
+      "destination": "/our-team/dr-patrick-huang/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-team-dr-hung-ting-lin",
+      "destination": "/our-team/dr-hung-ting-lin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-team-dr-kaitlyn-beers",
+      "destination": "/our-team/dr-kaitlyn-beers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-team-dr-teresa-viengkhou",
+      "destination": "/our-team/dr-teresa-viengkhou/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/:path*",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/smile-gallery",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<sub>.*)\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(styles\\.css|main\\.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
