@@ -968,3 +968,12 @@ body[data-hero="a"] .hero-scrim {
 .mobile-menu { background: #fff; }
 /* Snoring photo: wide frames show both people; narrow tiles centre on her */
 .svc-card img[data-slot="svc-snoring"] { object-position: 36% 35% !important; }
+/* Contact: form first, booking note below */
+.form .form-title { font-size: clamp(1.7rem, 2.6vw, 2.2rem); }
+.form .form-intro { color: var(--muted); margin: -4px 0 6px; }
+#book { scroll-margin-top: calc(var(--header-h) + 34px); }
+.booking-note { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 18px 22px; border-radius: var(--r-md); background: var(--tint-1); border: 1px solid var(--line-soft); }
+.booking-note .ic { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: #fff; color: var(--primary-strong); flex: 0 0 auto; }
+.booking-note .ic svg { width: 20px; height: 20px; }
+.booking-note p { margin: 0; font-size: 0.95rem; color: var(--text); }
+.booking-note a { font-weight: 600; white-space: nowrap; }
