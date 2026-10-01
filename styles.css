@@ -977,3 +977,7 @@ body[data-hero="a"] .hero-scrim {
 .booking-note .ic svg { width: 20px; height: 20px; }
 .booking-note p { margin: 0; font-size: 0.95rem; color: var(--text); }
 .booking-note a { font-weight: 600; white-space: nowrap; }
+/* Contact: full-width map band at the bottom of the page */
+.blk-map-full { margin-top: clamp(28px, 4vw, 56px); }
+.blk-map-full .map { border-radius: 0; box-shadow: none; min-height: 0; height: clamp(340px, 42vw, 520px); }
+@media (max-width: 640px) { .blk-map-full .map { height: 360px; } }
