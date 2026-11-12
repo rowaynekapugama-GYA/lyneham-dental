@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.3.0 (12 November 2026): privacy policy
+
+- Privacy Policy page: the holding text is replaced by the full policy (six sections: about the policy, what we collect, use and sharing, storage and retention, the website, access and complaints). Last updated 12 November 2026. Meta description updated.
+- Drafted by GYA and published at Rowayne's request before the practice has confirmed it. Still to confirm with the practice: legal entity name and ABN, the privacy contact, that Zavy stores records in Australia, other systems holding patient data, SMS/email reminders, whether any marketing is sent, CCTV, and fees for copies of records.
+
 ## v1.2.0 (12 November 2026): homepage headline and family wording
 
 Following Dr Huang's design feedback of 24 September 2026.

@@ -1013,3 +1013,8 @@ body[data-hero="a"] .hero-scrim {
   .card-grid.c3.why6 > * { grid-column: span 2; }
   .card-grid.c3.why6 > :nth-child(2n+1):last-child { grid-column: 2 / span 2; }
 }
+
+/* v1.3.0: privacy policy page */
+[data-block=legal] .prose ul { margin: 0.4em 0 1em; }
+[data-block=legal] .prose p + p { margin-top: 0.8em; }
+.policy-updated { margin-top: 1.4em !important; color: var(--muted); font-size: 0.9rem; }
