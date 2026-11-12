@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.0 (12 November 2026): homepage headline and family wording
+
+Following Dr Huang's design feedback of 24 September 2026.
+- Homepage H1: "Trusted dental care in the heart of Lyneham" to "Everyday dentistry, done really well" (his preferred line). The page title, meta description and the "Dentist Lyneham, Canberra" eyebrow above the H1 are unchanged, so the location keywords stay.
+- Homepage hero: "cared for Canberra families" to "cared for Canberra patients" (he felt the design leaned too heavily into family). "Family owned" is kept, as it describes the ownership.
+
 ## v1.1.0 (12 November 2026): Dr Huang's edits and Zavy online booking
 
 Commit message: "Client edits: 30 years, accreditation removed, bios, technology, Zavy online booking"
