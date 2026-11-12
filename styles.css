@@ -981,3 +981,35 @@ body[data-hero="a"] .hero-scrim {
 .blk-map-full { margin-top: clamp(28px, 4vw, 56px); }
 .blk-map-full .map { border-radius: 0; box-shadow: none; min-height: 0; height: clamp(340px, 42vw, 520px); }
 @media (max-width: 640px) { .blk-map-full .map { height: 360px; } }
+
+/* v1.1.0: Book Online page (Zavy embed) */
+.blk-booking { padding-top: clamp(32px, 5vw, 64px); }
+.booking-frame { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid var(--line-soft); border-radius: var(--r-xl); box-shadow: var(--shadow); padding: clamp(8px, 1.6vw, 18px); overflow: hidden; }
+.booking-frame iframe { display: block; width: 100%; min-height: 600px; border: 0; }
+.booking-fallback { max-width: 980px; margin: 18px auto 0; text-align: center; color: var(--muted); font-size: 0.95rem; }
+.booking-fallback a { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--primary-strong); text-decoration: underline; text-underline-offset: 3px; }
+.booking-fallback svg { width: 15px; height: 15px; }
+
+/* v1.1.0: larger phone number on the homepage (same font, weight and colour) */
+.page-home .phone-link { font-size: clamp(1.18rem, 1.05rem + 0.55vw, 1.42rem); gap: 10px; letter-spacing: 0.01em; }
+.page-home .phone-link svg { width: 22px; height: 22px; }
+.page-home .blk-hero .phone-link { font-size: clamp(1.25rem, 1.08rem + 0.7vw, 1.6rem); }
+.page-home .blk-hero .phone-link svg { width: 24px; height: 24px; }
+.page-home .c-row a[href^="tel:"] { font-size: 1.22rem; font-weight: 600; }
+/* v1.1.0: contact rows shrink to the card at 320px (was 33px too wide) */
+.c-rows > .c-row, .c-row > div { min-width: 0; }
+.c-rows { grid-template-columns: minmax(0, 1fr); }
+.c-row a[href^="mailto:"] { overflow-wrap: anywhere; }
+
+/* v1.1.0: card grids with an incomplete last row centre it (no empty slot) */
+@media (min-width: 901px) {
+  .card-grid.c3.why6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .card-grid.c3.why6 > * { grid-column: span 2; }
+  .card-grid.c3.why6 > :nth-child(3n+1):nth-last-child(2) { grid-column: 2 / span 2; }
+  .card-grid.c3.why6 > :nth-child(3n+1):last-child { grid-column: 3 / span 2; }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .card-grid.c3.why6 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .card-grid.c3.why6 > * { grid-column: span 2; }
+  .card-grid.c3.why6 > :nth-child(2n+1):last-child { grid-column: 2 / span 2; }
+}

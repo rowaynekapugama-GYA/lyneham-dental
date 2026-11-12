@@ -8,7 +8,7 @@ var SITE = {
   // Zavy online booking goes live in about 3 weeks. Until then every
   // "Book an appointment" button points to the contact page booking slot.
   // Replace with the Zavy link Rowayne supplies. Do not guess it.
-  BOOKING_URL: '/contact/#book',
+  BOOKING_URL: '/book-online/',
   PHONE: '02 6249 1785',
   TEL: 'tel:0262491785',
   // Smile Gallery is designed but switched off until there are consented cases.
@@ -23,6 +23,27 @@ var SITE = {
 
   /* Booking links: one setting feeds every button */
   document.querySelectorAll('[data-book]').forEach(function (a) { a.setAttribute('href', SITE.BOOKING_URL); });
+
+  /* Booking clicks: a book_online event for GA4/GTM once a tag is added (no-op until then) */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-book], [data-zavy-link]');
+    if (!a) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'book_online', link_url: a.getAttribute('href'), link_text: (a.textContent || '').trim().slice(0, 60), page_path: location.pathname });
+  });
+
+  /* Zavy booking embed: resize only on messages from Zavy itself */
+  var zavy = document.getElementById('zavy-online-booking');
+  if (zavy) {
+    window.addEventListener('message', function (e) {
+      if (e.origin !== 'https://bookings.zavy360.com') return;
+      var d = e.data;
+      if (d && d.type === 'zavy-resize') {
+        var h = parseInt(d.height, 10);
+        if (h >= 300 && h <= 12000) zavy.style.height = h + 'px';
+      }
+    });
+  }
 
   /* Feature flags: elements marked data-flag stay hidden unless the flag is on */
   document.querySelectorAll('[data-flag]').forEach(function (el) {
