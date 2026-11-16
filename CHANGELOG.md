@@ -1,5 +1,52 @@
 # Changelog
 
+## v1.4.0 (16 November 2026): modern technology wording, Zeiss Pico, privacy policy answers
+
+From Dr Huang's email of 14 November 2026. Built from main at faa5eb4 (v1.3.0).
+
+Commit message: "content: modern technology wording, Zeiss Pico, privacy policy answers from Dr Huang"
+
+### Wording
+- Homepage, Welcome section.
+  Before: "We pair that personal attention with thoughtful, modern dentistry, including dental microscopes for precision, a Gemini diode soft tissue laser, and single-visit ceramic and zirconia restorations, so that excellent care never comes at the expense of comfort ."
+  After: "We pair that personal attention with thoughtful dentistry using modern technology, including dental microscopes for precision, a Gemini diode soft tissue laser, and single-visit ceramic and zirconia restorations, so that excellent care never comes at the expense of comfort."
+- About, Safety and quality.
+  Before: "We are among the few general dental practices to use dental operating microscopes. The view through the dental microscope enlarges the surface of a tooth to the size of a dinner plate."
+  After: "We use a Zeiss Pico dental operating microscope. The view through the microscope enlarges the surface of a tooth to the size of a dinner plate." ("the dental microscope" became "the microscope" so the sentence does not repeat the one before it.)
+- "State of the art" appears nowhere on the site; "among the few" and "one of the few" are gone.
+- Unchanged: O'Connor's "Thoughtful, modern dentistry, applied with a gentle and unhurried approach." (a different sentence). The plural "microscopes" stays on the homepage Welcome sentence, the Precision icon card (homepage and About) and the About Why patients stay card until the practice confirms how many microscopes it has.
+
+### Stray spaces before punctuation (left by the review tags removed in r3.1)
+- Homepage: "at the expense of comfort ." to "comfort."
+- Extractions: "expert care ." to "expert care."
+- Veneers: "look entirely natural :" to "natural:"
+- Inlays and Onlays: "looks and feels entirely natural ," to "natural,"
+- Root Canal Treatment: "than many people expect ." to "expect." and "in the majority of cases ," to "cases,"
+
+### Privacy policy (privacy-policy/index.html and the draft Claude Doc, word for word)
+- Section 2, new paragraph: "CCTV. We use, or are installing, CCTV at the practice for security, with signs where cameras operate."
+- Section 3, uses.
+  Before: "send appointment confirmations, reminders and recall notices by phone, SMS or email"
+  After: "send appointment reminders and recalls by SMS and email (you can tell us which you prefer)"
+- Section 3, Marketing.
+  Before: "We will only send you newsletters or promotional messages if you have agreed to receive them, and you can opt out at any time by replying STOP, using the unsubscribe link or telling us. Appointment reminders and recall notices are part of your care, not marketing."
+  After: "We don't currently send newsletters or promotional messages. If that changes, we will only send them with your consent, and you will be able to opt out at any time. Appointment reminders and recalls are part of your care, not marketing."
+- Section 4, where records are held.
+  Before: "Our patient records are digital and are stored in an Australian-based cloud database. We protect them with password-protected accounts, ..."
+  After: "Our patient records are digital and are kept in Zavy, our practice management system, which stores them in Australia. Digital x-rays are stored on a server at the practice, with cloud backup through Datto; our IT provider, Biztech, has confirmed that this backup is stored in Australia. Digital impressions (3D scans of your teeth) are stored and processed through DS Core, a Dentsply Sirona service, in Sydney." Then a new paragraph: "We protect your records with password-protected accounts, ..." (rest unchanged).
+- Section 6, Seeing your records.
+  Before: "We may need to confirm your identity first, and a fee may apply for copies or a summary, within the limits set under ACT law; we will tell you before any fee is charged."
+  After: "We may need to confirm your identity first. There is no charge to transfer your records to another practitioner. If a fee applies for copies or a summary, it will be within the limits set under ACT law, and we will tell you before it is charged."
+- Section 6, Questions and complaints.
+  Before: "Please contact us first so we can try to resolve your concern."
+  After: "Our Practice Manager, Fay Timmings, looks after privacy questions and complaints. Please contact her first so we can try to resolve your concern."
+  Contact list, before: "Lyneham Dental Care, 45 Hall Street, Lyneham ACT 2602"; after: "Post: Fay Timmings, Practice Manager, Lyneham Dental Care, 45 Hall Street, Lyneham ACT 2602". Phone and email unchanged (the practice's 02 6249 1785 and admin@lynehamdentalcare.com.au).
+- Last updated: 12 November 2026 to 16 November 2026.
+- Unchanged: everything else, including the section saying website enquiries may be processed outside Australia.
+
+### Still open with the practice
+Legal entity name and ABN; how many microscopes; whether to use Zeiss's model name "OPMI pico"; CCTV retention and who can view footage; any charge for patients' copies of their own records; that admin@lynehamdentalcare.com.au is monitored; before and after photos.
+
 ## v1.3.0 (12 November 2026): privacy policy
 
 - Privacy Policy page: the holding text is replaced by the full policy (six sections: about the policy, what we collect, use and sharing, storage and retention, the website, access and complaints). Last updated 12 November 2026. Meta description updated.
