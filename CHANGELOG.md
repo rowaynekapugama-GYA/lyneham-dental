@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.5.0 (17 November 2026): team order, ABN and entity in privacy policy, go-live guide
+
+From Dr Huang's email of 17 November 2026. Built from main at 6ef31d3 (v1.4.0).
+
+Commit message: "content: team order, ABN and entity in privacy policy, go-live guide"
+
+### Team order
+- Homepage "Meet our team" and the "Our Team" dropdown in the header (desktop and mobile menu, all 40 pages).
+  Before: Dr Patrick Huang, Dr Hung-Ting Lin, Dr Kaitlyn Beers, Dr Teresa Viengkhou
+  After: Dr Patrick Huang, Dr Kaitlyn Beers, Dr Hung-Ting Lin, Dr Teresa Viengkhou
+- Names, titles, qualifications and photos unchanged; only the order moved. Nobody else is in either list.
+- Not changed (not mentioned by Dr Huang): the Our Team page and the About page team section, both still Patrick Huang, Hung-Ting Lin, Kaitlyn Beers, Teresa Viengkhou.
+
+### Privacy policy (page and Claude Doc, word for word)
+- Section 1, added after the first sentence: "The practice is operated by The Trustee for The LDC Trust (ABN 80 436 631 241)."
+- Last updated: 16 November 2026 changed to 17 November 2026.
+
+### Go-live preparation
+- New `docs/GO-LIVE.md` (DNS records to keep, Vercel domain steps, redirects, email, booking, after go-live) and `docs/check-golive.sh` (read-only DNS, host and redirect checks).
+- `.vercelignore`: `docs` added so neither file is served.
+- `vercel.json`: 301 redirects added for the old homepage's "Read more" links (/node/64, 68, 65, 19, 66, 70, 67, 71 to their service pages), any other /node/ address to the homepage, and /rss.xml to /blog/.
+- `README.md`: "Before go-live" now points to docs/GO-LIVE.md.
+
+### Still open
+- One microscope or more ("microscopes" on the homepage Welcome and Precision cards, About Precision card and "Why patients stay").
+- Full model name "ZEISS OPMI pico"?
+- CCTV retention and who can see footage.
+- Any charge for patients' copies of records.
+- Is admin@lynehamdentalcare.com.au monitored?
+- Before and after photos.
+
 ## v1.4.0 (16 November 2026): modern technology wording, Zeiss Pico, privacy policy answers
 
 From Dr Huang's email of 14 November 2026. Built from main at faa5eb4 (v1.3.0).

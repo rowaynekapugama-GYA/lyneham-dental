@@ -35,4 +35,6 @@ The script keeps a working copy of the repo at `~/gya-sites/lyneham-dental` (it 
 Hero B and the review bar (review-only), the Smile Gallery (until there are consented cases), the newsletter signup (no mailing list yet).
 
 ## Before go-live
+The domain switch, DNS records to keep, redirects, email and booking checks are in `docs/GO-LIVE.md`, with a read-only check script in `docs/check-golive.sh`. The docs folder is not deployed.
+
 The full list is in REVIEW.md in the design zip. The main items: privacy policy wording from the practice, written approval from staff shown in the Welcome, Our Team and Fees photos, the flagged AHPRA wording, the CDBS age range, the Zavy link, and the SMTP2GO sender domain.
