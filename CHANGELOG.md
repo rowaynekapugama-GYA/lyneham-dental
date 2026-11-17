@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.5.1 (17 November 2026): same team order everywhere
+
+Built from main at 0281ada (v1.5.0). Requested by Rowayne so the team reads in Dr Huang's order on every page, on phone and desktop.
+
+Commit message: "content: same team order on Our Team, About and profile pages"
+
+Order everywhere: Dr Patrick Huang, Dr Kaitlyn Beers, Dr Hung-Ting Lin, Dr Teresa Viengkhou.
+- Our Team page team cards. Before: Huang, Lin, Beers, Viengkhou.
+- About page team cards. Before: Huang, Lin, Beers, Viengkhou.
+- Profile pages, "the rest of the team" cards (each page leaves out its own dentist): Dr Patrick Huang page now Beers, Lin, Viengkhou (was Lin, Beers, Viengkhou); Dr Teresa Viengkhou page now Huang, Beers, Lin (was Huang, Lin, Beers). The Kaitlyn Beers and Hung-Ting Lin pages were already in order.
+- Homepage sentence above the team cards. Before: "Our dentists, Dr Patrick Huang, Dr Hung-Ting Lin, Dr Kaitlyn Beers and Dr Teresa Viengkhou, would be glad to welcome you." After: "Our dentists, Dr Patrick Huang, Dr Kaitlyn Beers, Dr Hung-Ting Lin and Dr Teresa Viengkhou, would be glad to welcome you."
+- Names, titles, qualifications and photos unchanged. The homepage cards and the Our Team menu (desktop and mobile) were already in this order from v1.5.0.
+
 ## v1.5.0 (17 November 2026): team order, ABN and entity in privacy policy, go-live guide
 
 From Dr Huang's email of 17 November 2026. Built from main at 6ef31d3 (v1.4.0).
