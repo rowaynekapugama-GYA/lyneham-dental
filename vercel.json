@@ -62,6 +62,16 @@
       "statusCode": 301
     },
     {
+      "source": "/implant-restorations",
+      "destination": "/services/restorative/implant-restorations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/clear-aligners",
+      "destination": "/services/cosmetic/clear-aligners/",
+      "statusCode": 301
+    },
+    {
       "source": "/node/64",
       "destination": "/services/preventative/check-up-and-clean/",
       "statusCode": 301

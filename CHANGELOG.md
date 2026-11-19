@@ -1,5 +1,45 @@
 # Changelog
 
+## v1.6.0 (19 November 2026): in-chair Zoom whitening, implant restorations and clear aligners, photo swaps
+
+From Dr Huang's email of 18 November 2026 (edits from one of his associate dentists). Built from main at d33e7e1 (v1.5.1).
+
+Commit message: "content: in-chair Zoom whitening, implant restorations and clear aligners, photo swaps, team order everywhere"
+
+### Team order (no change needed)
+Already the same everywhere since v1.5.1 (d33e7e1): Dr Patrick Huang, Dr Kaitlyn Beers, Dr Hung-Ting Lin, Dr Teresa Viengkhou on the homepage cards and sentence, the Our Team menu (desktop and mobile, every page), the Our Team page, the About page and the four profile pages.
+
+### Teeth Whitening: in-chair Zoom (drafted, for Dr Huang's approval)
+Two cards added after "Our tailored, take-home approach":
+- "In-chair whitening": "If you would prefer to whiten your teeth at the practice, we also offer in-chair whitening with the Zoom whitening system. It is carried out by your dentist in a single appointment, rather than over a series of days at home." / "At your appointment, we protect your gums and lips, then apply a professional whitening gel to your teeth, checking how they are responding as we go. We will talk you through each step, so you know what to expect before we begin."
+- "Before your in-chair appointment": "As with take-home whitening, we start with a check-up to make sure whitening is suitable for you, and that any decay or gum problems are looked after first. We will also discuss whether in-chair or take-home whitening suits you better." Bullets: "It is done at the practice, in one appointment, using the Zoom system" / "A check-up first confirms that whitening is suitable for you" / "It lightens natural teeth only, not fillings, crowns or veneers". Closing line: "Results vary between people. Some people notice temporary tooth sensitivity after whitening."
+- Related tiles: Children's Dentistry swapped for Clear Aligners.
+
+### New service pages (drafted, for Dr Huang's approval)
+- /services/restorative/implant-restorations/ "Implant restorations": restoring implants with crowns and bridges; does not say the practice places implants. Four cards, four FAQs, FAQ schema, risks and second-opinion callout, related tiles (Crowns and Bridges, CEREC, Inlays and Onlays).
+- /services/cosmetic/clear-aligners/ "Clear aligners": no brand named; suitability card, "Results vary" lines, four cards, four FAQs, FAQ schema, related tiles (Teeth Whitening, Veneers, Check-up and Clean).
+- Both are in the sitemap, the desktop and mobile Services menus on every page, the Services page index, and the Cosmetic and Restorative category pages. /implant-restorations and /clear-aligners redirect (301) to them.
+- Category summaries: "Single-visit crowns, crowns and bridges, inlays and onlays, and root canal treatment." now "Single-visit crowns, crowns and bridges, implant restorations, inlays and onlays, and root canal treatment." (homepage, Services page, six location pages). "Teeth whitening and porcelain veneers." now "Teeth whitening, porcelain veneers and clear aligners." (Services page, five location pages); the Braddon version and the homepage version ("Teeth whitening and veneers, ...") likewise.
+- Braddon FAQ: "Yes, we offer professional take-home whitening and porcelain veneers, always beginning..." now "Yes, we offer professional in-chair and take-home whitening, porcelain veneers and clear aligners, always beginning..." (page and schema).
+- Crowns and Bridges related tiles: Root Canal Treatment swapped for Implant Restorations. Veneers related tiles: Children's Dentistry swapped for Clear Aligners.
+
+### Fissure Sealants
+- Before: "It is a quiet, preventative measure, quietly working in the background to help a healthy tooth stay that way."
+- After: "It is a preventative measure, quietly working in the background to help a healthy tooth stay that way."
+
+### Photos
+- Custom Mouthguards now shows the sports mouthguard photo (alt "A smiling child holding a blue mouthguard"); Teeth Grinding now shows the clear splint photo (alt "A clear splint being placed over the teeth"). Menu thumbnails and tiles swapped with them. The Teeth Grinding hero, tiles and menu thumbnail all use one file, `images/svc-bruxism.webp`, ready for Dr Huang's nylon splint photo.
+- Crowns and Bridges: the implant, tooth and bridge render is removed everywhere it appeared (hero, category tile, related tiles, menu). A neutral line illustration stands in until a licensed bridge photo is bought (alt "Line illustration of a dental bridge").
+- New pages use neutral line illustrations too. Photos to buy: `docs/STOCK-SHOT-LIST.md`.
+
+### Still open
+- "Zoom" or "Philips Zoom"?
+- Does the practice place implants, or restore them only?
+- Which clear aligner system?
+- Dr Huang's nylon splint photo; stock photos for Crowns and Bridges, Implant Restorations and Clear Aligners.
+- Root Canal hero is a stylised 3D render (listed, not changed).
+- From v1.5.0: one microscope or more; "ZEISS OPMI pico"; CCTV retention and access; any charge for patients' copies of records; is admin@ monitored; before and after photos.
+
 ## v1.5.1 (17 November 2026): same team order everywhere
 
 Built from main at 0281ada (v1.5.0). Requested by Rowayne so the team reads in Dr Huang's order on every page, on phone and desktop.
