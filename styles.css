@@ -1018,3 +1018,7 @@ body[data-hero="a"] .hero-scrim {
 [data-block=legal] .prose ul { margin: 0.4em 0 1em; }
 [data-block=legal] .prose p + p { margin-top: 0.8em; }
 .policy-updated { margin-top: 1.4em !important; color: var(--muted); font-size: 0.9rem; }
+
+/* v1.7.1: a supporting photo or illustration inside an info card */
+.sec-card .card-photo { margin: 20px 0 0; border-radius: var(--r-md); overflow: hidden; background: var(--tint-3); }
+.sec-card .card-photo img { display: block; width: 100%; height: auto; }

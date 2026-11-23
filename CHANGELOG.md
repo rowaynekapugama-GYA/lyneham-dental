@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.7.1 (23 November 2026): service page photos and Dr Huang's nylon splint photo
+
+Built from main at 86466f7 (v1.7.0).
+
+Commit message: "content: service page photos (clear aligners, crowns and bridges, implant restorations, root canal) and nylon splint photo"
+
+- Teeth Grinding: the hero, tiles and menu thumbnail (one file, `images/svc-bruxism.webp`) now show Dr Huang's photo IMG_3225 of the practice's custom nylon night splint on a dental model. It is cropped to 1600 x 900, with white balance and exposure corrected only. Alt text: "Custom nylon night splint on a dental model". IMG_3226 (white balance taken from the splint itself, as the original had a green cast) is added inside the "How we can help" card (`images/grinding-splint-model.webp`), alt text "Custom nylon night splint fitted to a dental model". IMG_3230 is not used.
+- Clear Aligners: Shutterstock 2281526921 (hero, category tile, related tiles, menu thumbnail). Alt text: "Person holding a pair of clear aligners". Crop focus 77% 45%, to keep the aligners and the smile in frame.
+- Crowns and Bridges: Shutterstock 2700003685. Alt text: "Close-up of a smile with ceramic dental restorations".
+- Implant Restorations: Shutterstock 2706786863. Alt text: "Patient looking at her smile in a hand mirror in a dental chair". Crop focus 67% 40%, to keep both faces in the hero and the patient fully in the tiles.
+- Root Canal Treatment: Shutterstock 2674865731 in the hero. Alt text: "Patient smiling in a dental chair". The v1.7.0 line illustration moves into the "The steps" card as `images/root-canal-cross-section.webp`.
+- All four stock photos are illustrative only, with no captions. They replace the line placeholders under the same file names, so every hero, tile and thumbnail picks them up.
+- Performance: the five photo heroes now have 800 and 1200 px versions with srcset (`-800.webp`, `-1200.webp`) and fetchpriority="high", so phones load the smaller file. In Lighthouse mobile (median of 3 runs), all five pages score the same as v1.7.0: performance 99, accessibility 89, best practices 96 and SEO 100.
+- `styles.css`: a small `.card-photo` style for an image inside an info card.
+- `docs/STOCK-SHOT-LIST.md`: all five slots are marked filled, with sources.
+
 ## v1.7.0 (23 November 2026): Philips Zoom, Angel Aligner, MAS and sleep study, root canal page, emergencies, privacy records, icons
 
 From Dr Huang's emails of 20 November (his answers) and 22 November (suggestions from the two associate dentists). Built from main at 773ba05 (v1.6.0).
