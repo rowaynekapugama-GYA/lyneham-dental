@@ -1,5 +1,47 @@
 # Changelog
 
+## v1.7.0 (23 November 2026): Philips Zoom, Angel Aligner, MAS and sleep study, root canal page, emergencies, privacy records, icons
+
+From Dr Huang's emails of 20 November (his answers) and 22 November (suggestions from the two associate dentists). Built from main at 773ba05 (v1.6.0).
+
+Commit message: "content: Philips Zoom, Angel Aligner, MAS and sleep study wording, root canal page, emergencies, privacy records, icons"
+
+Lines marked (draft) are waiting on Dr Huang's approval.
+
+### Dr Huang's answers
+1. Teeth Whitening: "Zoom" is now "Philips Zoom" in both places it appeared (the in-chair card and its bullet). No other page, tile, menu or meta used it.
+2. Implants, restore only. Implant Restorations "Is it right for you?" now includes (draft): "We do not place implants at the practice. The implant itself is placed by a surgeon or specialist, and we then make and fit the crown or bridge that goes on it." No other page suggests placement.
+3. Clear Aligners, "How clear aligners work", now opens: "We use the Angel Aligner system." There is no "which system" FAQ, so the body has the only mention. The suitability card and "results vary" lines are unchanged.
+4. Splint photos: only the email previews (166 px) were available, which is too small for any use on the page. The hero is unchanged, pending the full-size originals. Pick: IMG_3225.
+
+### Associates' edits
+5. In-chair whitening (draft). "It is carried out by your dentist in a single appointment, rather than over a series of days at home." is now "It is carried out in a single appointment, rather than over a series of days at home. In-chair whitening is currently provided by Dr Teresa Viengkhou, who also sees you for the consultation beforehand." Her name links to her profile.
+6. Snoring and MAS (draft). "Dr Teresa Viengkhou offers consultations for these appliances at our practice, and will discuss whether one may be suitable for you." is now "Dr Teresa Viengkhou and Dr Hung-Ting Lin both provide consultations for snoring and mandibular advancement splints at our practice, and will discuss whether a splint may be suitable for you." The FAQ "How do I know if a snoring appliance is right for me?" now names both. Both names link to their profiles.
+7. Snoring and MAS, sleep apnoea (draft):
+   - Summary now adds: "It can have several causes, and one of them is obstructive sleep apnoea (OSA), where the airway repeatedly narrows or closes during sleep. A custom-made mandibular advancement splint (MAS), often simply called a snoring appliance, is worn at night and gently eases the lower jaw forward to help keep the airway open. It is one way of treating OSA once it has been diagnosed through a sleep study."
+   - The card "Snoring and your wider health" is replaced by "Sleep apnoea and a sleep study": "Snoring can be a sign of obstructive sleep apnoea (OSA). A dentist cannot diagnose OSA: a diagnosis comes from a sleep study. A mandibular advancement splint is prescribed when OSA has been diagnosed, preferably with a recommendation from a sleep physician that a splint is a suitable treatment option for you. / A splint is one option for treating OSA, not the only one, and whether it suits you depends on your diagnosis. If you have not had a sleep study, we can talk you through the steps to arrange one through your GP or a sleep physician."
+   - FAQ "Will an appliance treat sleep apnoea?" was "...We may suggest you also speak with your GP or a sleep specialist so your wider health is properly considered." It is now: "A mandibular advancement splint is one option for treating obstructive sleep apnoea (OSA), but it is not the only one. OSA first needs to be diagnosed through a sleep study, as a dentist cannot diagnose it. A splint is prescribed once OSA has been diagnosed, preferably with a sleep physician's recommendation that it is a suitable option for you."
+   - FAQ "Should I see my doctor about my snoring too?" was "Sometimes, yes. Because snoring can be linked to wider sleep and health concerns, we may recommend speaking with your GP or a sleep specialist alongside considering a dental appliance." It is now: "Often, yes. A sleep study is needed first to find out whether sleep apnoea is involved, and we can talk you through the steps to arrange one through your GP or a sleep physician."
+   - Meta description is now: "Snoring appliances (mandibular advancement splints) at Lyneham Dental Care, Canberra. Snoring can be a sign of sleep apnoea, so a sleep study comes first."
+   - Service tile summary (5 pages) is now: "Snoring can be a sign of sleep apnoea. A custom splint is one treatment option once it has been diagnosed through a sleep study."
+8. Root Canal image: the 3D render is replaced by a neutral line illustration of a molar cross-section (crown, enamel, pulp chamber, two canals, two roots), drawn for the site. The file name is the same, so the hero, tiles and menu thumbnail all show it. A licensed illustration is listed in docs/STOCK-SHOT-LIST.md.
+9. Root Canal tone (draft). The page now opens with what the treatment is for, then signs, steps and what to expect afterwards. "Successful in the majority of cases", "far more comfortable than many people expect" and "far more comfortable than its reputation suggests" are removed. Full before and after wording is in the v1.7.0 report. The risks callout is unchanged.
+10. Root Canal microscope (draft): "Treatment is carried out using our Zeiss Pico dental operating microscope, which magnifies the inside of the tooth."
+11. Dental Emergencies (draft): "keep it moist" now reads "keep it moist in milk or the person's own saliva, not water", in the "In the meantime" box and the FAQ "My tooth has been knocked out" (page and schema).
+12. Dental Emergencies: "Getting in touch" now has a phone icon.
+13. Teeth Grinding FAQ "Can teeth grinding damage my teeth?" (draft) adds: "It also increases the risk of teeth and restorations, such as fillings and crowns, fracturing."
+14. Footer banner: left at three items. The four-item mock-up with CDBS is in the screenshots only.
+15. Privacy, CCTV: unchanged ("We use, or are installing"), until Dr Huang confirms it is installed.
+16. Privacy, records (draft). "we keep them until they turn 25. After that, records are destroyed securely." is now "we keep them at least until they turn 25. After these periods, records may be securely destroyed or de-identified." The adult sentence already said "at least seven years". Last updated is now 23 November 2026, and the Claude Doc matches.
+17. Icons: every info box on a treatment page now has its own icon. The changes are listed in the v1.7.0 report.
+18. Blog: "New articles will appear here, newest first" is now "Articles will appear here, newest first".
+
+### Still open
+- Splint photo originals (IMG_3225, IMG_3226, IMG_3230 at full size).
+- Is the CCTV installed, so we can say "we use"?
+- Add CDBS to the footer banner?
+- One microscope or more? "ZEISS OPMI pico" full name? CCTV retention and who can view footage? Is admin@ monitored? Before and after photos. Stock photos from the shot list. Go-live date for lynehamdentalcare.com.au.
+
 ## v1.6.0 (19 November 2026): in-chair Zoom whitening, implant restorations and clear aligners, photo swaps
 
 From Dr Huang's email of 18 November 2026 (edits from one of his associate dentists). Built from main at d33e7e1 (v1.5.1).
