@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.7.2 (23 November 2026): CDBS in the footer banner
+
+Built from main at 1c49006 (v1.7.1).
+
+Commit message: "content: add CDBS to the footer banner"
+
+- Footer banner, on all 42 pages: the DVA item now reads "Department of Veterans’ Affairs (DVA) and Child Dental Benefits Schedule (CDBS) patients welcome". The banner keeps three items, as Dr Huang preferred. It sits on one line at desktop width and wraps on phones and tablets, as before.
+- Nothing else changed.
+
 ## v1.7.1 (23 November 2026): service page photos and Dr Huang's nylon splint photo
 
 Built from main at 86466f7 (v1.7.0).
