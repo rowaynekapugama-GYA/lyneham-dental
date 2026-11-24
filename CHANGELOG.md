@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.7.3 (24 November 2026): CCTV line in the privacy policy
+
+Built from main at d359010 (v1.7.2).
+
+Commit message: "content: privacy policy CCTV wording"
+
+- Privacy policy, CCTV: "We use, or are installing, CCTV at the practice for security" is now "We use CCTV at the practice for security", as Dr Huang suggested in his email of 22 November. The rest of the sentence is unchanged.
+- Privacy policy "Last updated" is now 24 November 2026.
+- Nothing else changed.
+- Still to confirm with the practice: how long CCTV footage is kept and who can view it.
+
 ## v1.7.2 (23 November 2026): CDBS in the footer banner
 
 Built from main at 1c49006 (v1.7.1).
